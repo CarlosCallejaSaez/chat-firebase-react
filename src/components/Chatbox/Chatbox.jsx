@@ -10,6 +10,7 @@ import {
 import { db } from "../../firebase-config";
 import Form from "../Form/Form";
 import Chatdata from "../Chatdata/Chatdata";
+import "./Chatbox.css"
 
 const Chatbox = ({ topic }) => {
   const [messages, setMessages] = useState([]);
@@ -40,7 +41,9 @@ const Chatbox = ({ topic }) => {
 
   return (
     <main className="chat-box">
+      <div className="topic-container">
        <h2>Topic: {topic.charAt(0).toUpperCase() + topic.slice(1)}</h2>
+       </div>
       <div className="messages-wrapper">
         {messages?.map((message) => (
           <Chatdata key={message.id} chatmessage={message} />

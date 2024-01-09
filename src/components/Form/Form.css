@@ -1,0 +1,33 @@
+.send-message {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 20px auto;
+  width: 50vw;
+}
+
+.form-input {
+  width: 50vw;
+  resize: vertical;
+  min-height: 80px;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+
+.send-button {
+  background-color: #d3e60a;
+  color: black;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.send-button:hover {
+    background: rgb(16,68,221);
+    background: linear-gradient(90deg, rgba(16,68,221,0.21052170868347342) 7%, rgba(255,153,0,0.4598214285714286) 100%);
+}

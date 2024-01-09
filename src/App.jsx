@@ -23,7 +23,8 @@ function App() {
       {!user ? (
         <Home />
       ) : (
-        <div>
+        <div >
+          <div className="select-container" >
           <label htmlFor="selectTopic">Select Topic:  </label>
           <select value={selectedTopic} onChange={handleTopicChange} id="selectTopic">
             {topics.map((topic) => (
@@ -32,6 +33,7 @@ function App() {
               </option>
             ))}
           </select>
+          </div>
           <Chatbox topic={selectedTopic} />
         </div>
       )}

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { auth, db } from "../../firebase-config";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
+import "./Form.css"
 
 const Form = ({ scroll, topic}) => {
   const [message, setMessage] = useState("");
@@ -28,16 +29,15 @@ const Form = ({ scroll, topic}) => {
       <label htmlFor="messageInput" hidden>
         Write your message
       </label>
-      <input
+      <textarea
         id="messageInput"
         name="messageInput"
-        type="text"
         className="form-input"
-        placeholder="write your message"
+        placeholder="Write your message"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
       />
-      <button type="submit">Send</button>
+      <button type="submit" className="send-button">Send</button>
     </form>
   );
 };
