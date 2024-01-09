@@ -12,7 +12,7 @@ const Navbar = () => {
     signInWithPopup(auth, provider);
   };
 
-  const signOut = () => {
+  const logOut= () => {
     auth.signOut();
   };
 
@@ -20,8 +20,8 @@ const Navbar = () => {
     <nav className="nav-bar">
       <h1>Carlos Dev Community Chat</h1>
       {user ? (
-        <button onClick={signOut}  type="button">
-          Sign Out
+        <button onClick={logOut}  type="button">
+          Log Out
         </button>
       ) : (
         <button >
