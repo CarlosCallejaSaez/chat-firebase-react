@@ -1,10 +1,17 @@
 import React from "react";
 import "./Home.css"
+import YoutubeEmbed from "../YoutubeEmbed/YoutubeEmbed";
 
 const Home = () => {
   return (
     <div className="home-container">
       <h1>Welcome to Carlos Dev Community Chat!</h1>
+
+      <p style={{color:"blue"}}><strong><u>
+        FOR THIS DEMO VERSION, IF YOU DONT WANT TO LOGIN YOU HAVE AT THE END OF THIS PAGE A DEMO VIDEO
+        </u>
+        </strong>
+      </p>
       <p>
         This is a community-driven chat application where developers can come
         together, discuss various topics, share knowledge, and connect with
@@ -27,6 +34,8 @@ const Home = () => {
         Join our community today and become a part of the Carlos Dev Chat
         family!
       </p>
+
+      <YoutubeEmbed embedId="aRZGWzJBgq4" />
     </div>
   );
 };
